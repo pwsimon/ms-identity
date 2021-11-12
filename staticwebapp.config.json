@@ -1,8 +1,4 @@
 {
 	"routes": [
-			{
-				"route": "/.well-known",
-				"rewrite": "/"
-			}
 		]
 }
