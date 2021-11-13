@@ -52,7 +52,11 @@ export const msalConfig = {
  * https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent#openid-connect-scopes
  */
 export const loginRequest = {
-    scopes: ["User.Read"]
+    scopes: [
+            "User.Read",
+            "http://psiestos.onmicrosoft.com/ecticlient/api/Chat.Text.Write",
+            "http://psiestos.onmicrosoft.com/ecticlient/api/CustomAction.Execute.All"
+        ]
 };
 
 /**
@@ -60,5 +64,5 @@ export const loginRequest = {
  * https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/resources-and-scopes.md
  */
 export const graphConfig = {
-    graphMeEndpoint: "Enter_the_Graph_Endpoint_Herev1.0/me"
+    graphMeEndpoint: "https://graph.microsoft.com/v1.0/me"
 };
